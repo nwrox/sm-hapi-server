@@ -8,12 +8,14 @@ const server = Hapi.server({
   host: 'localhost',
   port: 8000,
   routes: {
-    cors: true,
-    // cors: {
-    //   credentials: true,
-    //   headers: ['Accept', 'Authorization', 'Content-Type', 'If-None-Match', 'Access-Control-Allow-Origin'],
-    //   origin: ['*']
-    // },
+    cors: {
+      origin: ['*'],
+      additionalHeaders: [
+        'Access-Control-Allow-Headers',
+        'Access-Control-Allow-Methods',
+        'Access-Control-Allow-Origin'
+      ]
+    },
     files: {
       relativeTo: path.join(__dirname, '../../static')
     }

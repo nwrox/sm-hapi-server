@@ -27,15 +27,13 @@ const routes = server => {
   })
 
   server.route({
-    method: ['OPTIONS', 'POST'],
+    method: 'POST',
     path:'/postSubmit',
     handler: (request, h) => {
       const {
         user,
         password
-      } = request.query
-
-      console.log(user, ':', password)
+      } = request.payload
 
       return user && password
         ? `Olá ${user}, a sua senha é ${password}`
