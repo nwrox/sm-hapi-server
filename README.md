@@ -8,7 +8,7 @@ Start the api @ port 8000 from command line: ```npm run start```.
 
 ### Dependencies
 
-The package.json has some, but they're not necessary as the script is beign executed with ```npx```.
+The package.json has some, install at least babel-preset-env (```npm i -D babel-preset-env```), other dependencies are not necessary as the script is being executed with ```npx```.
 
 ### Routes
 
