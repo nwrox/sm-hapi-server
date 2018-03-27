@@ -1,0 +1,29 @@
+{
+  "name": "sm-hapi-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/index.js",
+  "scripts": {
+    "start": "npx nodemon --exec babel-node ./src/index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nwrox/sm-hapi-server.git"
+  },
+  "author": "Hérikz Nawarro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nwrox/sm-hapi-server/issues"
+  },
+  "homepage": "https://github.com/nwrox/sm-hapi-server#readme",
+  "dependencies": {
+    "hapi": "^17.2.3",
+    "inert": "^5.1.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "nodemon": "^1.17.2"
+  }
+}
